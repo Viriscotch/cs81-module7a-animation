@@ -38,10 +38,12 @@
           clearInterval(interval);       // Stop the loop
           loader.textContent = "✅";    // Replace with checkmark
           status.textContent = "Done!"; // Update the message
+          // new feature: change background color to indicate completion
+          document.body.style.backgroundColor = "#d0f0c0"; // Soft green
         }
       }, 500);
     }
-
+    // creative idea: Add a sound effect when the loading completes
     // Run the animation when the page loads
     runLoadingAnimation();
   </script>
